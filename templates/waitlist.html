@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the waitlist · Valdor Jets</title>
+<meta name="description" content="Get early access to Valdor Jets: private charter and empty-leg flights from independent, certified operators.">
+<link rel="canonical" href="https://blog.valdorjets.com/waitlist/">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+{{header}}
+<main class="wl-page">
+  <div class="kicker">Early access</div>
+  <h1>Be first to fly Valdor.</h1>
+  <p class="lede">Join the waitlist for launch access, launch pricing, and empty-leg alerts for your routes. Operators: pick "Operator" and we'll be in touch about listing your aircraft.</p>
+  <div class="wl-card"><div data-waitlist id="wl"></div></div>
+</main>
+{{footer}}
+<script>
+  (function () {
+    var r = new URLSearchParams(location.search).get("role");
+    if (r) document.getElementById("wl").setAttribute("data-role", r);
+  })();
+</script>
+</body>
+</html>

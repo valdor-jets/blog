@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.valdorjets.com/sitemap.xml
